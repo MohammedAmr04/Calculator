@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+     <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" name="display" readonly>
+                </div>
+                <div class="buttons">
+                    <input type="button" value="AC" onclick="document.querySelector('.display input[name=display]').value=''">
+                    <input type="button" value="DE" onclick="document.querySelector('.display input[name=display]').value=document.querySelector('.display input[name=display]').value.slice(0, -1)">
+                    <input type="button" value="." onclick="Click(event)">
+                    <input type="button" value="/" onclick="Click(event)">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="7" onclick="Click(event)">
+                    <input type="button" value="8" onclick="Click(event)">
+                    <input type="button" value="9" onclick="Click(event)">
+                    <input type="button" value="*" onclick="Click(event)">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="4" onclick="Click(event)">
+                    <input type="button" value="5" onclick="Click(event)">
+                    <input type="button" value="6" onclick="Click(event)">
+                    <input type="button" value="+" onclick="Click(event)">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="1" onclick="Click(event)">
+                    <input type="button" value="2" onclick="Click(event)">
+                    <input type="button" value="3" onclick="Click(event)">
+                    <input type="button" value="-" onclick="Click(event)">
+                </div>
+                <div class="buttons">
+                    <input type="button" value="00" onclick="Click(event)">
+                    <input type="button" value="0" onclick="Click(event)">
+                    <input type="button" value="=" onclick="calculate()" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
